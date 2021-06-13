@@ -34,14 +34,14 @@
                     <button type='button' onclick='register()' class='toggle-btn'>Register</button>
                 </div>
                 
-                <form id="login" class="input-group-login" action="#" method="post">
+                <form id="login" class="input-group-login"  method="get">
                     <label for=""></label><input type="text" class='input-field' placeholder='Enter E-mail' required >
                     <input type="password" class='input-field' placeholder='Enter Password' required><br>
                     <input type="checkbox" class='check-box'><span>Remember Password</span>
                     <button type="submit" class='submit-btn'>Log in</button>
                 </form>
                 
-                <form id="register" class="input-group-register" action="index.html" method="post"  >
+                <form id="register" class="input-group-register" action="index.html" method="get" onsubmit="return validation()" >
                     <input type="text" class='input-field' placeholder='First Name' required>
                     <input type="text" class='input-field' placeholder='Last Name' required>
                     <input type='email' class='input-field' id="email" placeholder='Email' required>
@@ -59,7 +59,7 @@
                     </select><br><br>
                     <input type='checkbox' class='check-box'>
                     <span>I agree to the <br><a href="">terms and conditions</a></span>
-                    <button type='submit' class='submit-btn' onclick="return validation()">Register</button>
+                    <button type='submit' class='submit-btn'>Register</button>
                 </form>
             </div>
         </div>
