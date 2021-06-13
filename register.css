@@ -266,6 +266,10 @@ span{
 		padding: 60px;
 		height:580px;
 	}
+	 .login-page{
+		background: url(register3.jpg) no-repeat;
+		background-size: cover;
+	}
 	#footer p{
 		font-size:3vw;
 	}
