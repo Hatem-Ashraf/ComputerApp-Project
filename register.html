@@ -174,13 +174,7 @@
             }
             
             
-            for(i in pass.value){
-                for(j in lowercase){
-                    if(pass.value[i] == lowercase[j] || pass.value[i] == uppercase[j]){
-                        charCounter = charCounter+1;
-                    }
-                }
-            }
+      
             
             
             if(pass.value.search(/[0-9]/) == -1){
@@ -193,7 +187,7 @@
                 return false;
             }
             
-            if(charCounter != 8){
+            if(pass.value.length != 8){
             document.getElementById("passText").innerHTML="the password must include 8 characters no more no less";
             return false;
             }
