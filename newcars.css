@@ -1,0 +1,415 @@
+html{
+        scroll-behavior: smooth;
+}
+
+body{ 
+    margin:0px; 
+    font-family: "Lucida Fax";
+    background-size: cover;
+}
+
+.header{
+    background: url('header.jpg') no-repeat ;
+    background-size: cover;
+    padding: 120px;
+    text-align: center;
+    color:rgba(204, 255, 238, 0.6);
+    font-size:3vw;
+}
+
+.nav ul{
+    list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.5vw;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.nav a:hover{
+    background: rgba(17,103,198,1);
+}
+.header2{
+    position:relative;
+    margin:40px auto;
+    max-width:1000px;
+    text-align: center;
+}
+.header2:before{
+    content:"";
+    display:block;
+    width:300px;
+    height:2px;
+    background: #000;
+    position:absolute;
+    left:0;
+    top:50%;
+    z-index:-2;
+}
+.header2:after{
+    content:"";
+    display:block;
+    width:300px;
+    height:2px;
+    background: #000;
+    position:absolute;
+    right:0;
+    top:50%;
+}
+.menu {
+    padding:20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgb(255,255,255)), url('newcars/menu.jpg') no-repeat;
+}
+.menu ul{
+    list-style-type: decimal;
+}
+.menu li{
+    margin:15px;
+}
+.menu ul a{
+    font-size:1.5vw;
+}
+.section1 p{
+    padding:20px;
+    font-size:1.5vw;
+    line-height: 30px;
+}
+.gallery1{
+    display: flex;
+    flex-flow: row wrap;
+    margin:50px auto;
+    height:1600px;
+    background-color: rgba(0,0,0,0.8);
+}
+.gallery1-inside {
+    margin:0px auto;
+    width:40%;
+    height:300px;
+}
+.gallery1-inside img{
+    width:100%;
+    height:100%;
+    margin:2px 0;
+}
+
+.gallery1-inside > p{
+    color:white;
+    text-align: center;
+    padding:2px;
+    font-size:1.5vw;
+}
+.gallery1-inside a{
+    transition: all .5s;
+}
+.gallery1-inside a:hover{
+    opacity: 0.6;
+}
+.gallery1-inside span{
+    color:white;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top:10px;
+}
+.section2 {
+    display:flex;
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+    height:400px;
+}
+.col1 ,.col2{
+    flex-basis: 50%;
+    overflow:hidden;
+    margin:1%;
+}
+.col1{
+    position:relative;
+}
+.col1 p{
+    line-height:30px;
+    margin:5px;
+    font-size:1.5vw;
+}
+.col2 img{
+    width:100%;
+    min-height:250px;
+}
+.col1 ul{
+    position:absolute;
+    bottom:15%;
+    left:30%;
+}
+ ul .btn{
+    list-style-type: nonr;
+    width:15px;
+    height:15px;
+    display:inline-block;
+    background:rgb(153, 149, 149);
+    border-radius:50%;
+    margin-right:15px;
+    cursor:pointer;
+}
+.col1 ul li.active{
+    background-color:rgb(59, 19, 19);
+}
+.zoom{
+    animation: zoomout 0.4s linear 1;
+}
+@keyframes zoomout{
+    0%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+}
+
+th{
+    border: 1px solid black;
+    text-align: center;
+    font-size : 2vw;
+    padding:10px;
+    height:120px;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+    font-size : 1.5vw;
+    padding:7px;
+}
+td img{
+    border-radius: 50%;
+    height:100px;
+}
+tr a{
+    color:rgb(60, 175, 221);
+}
+table{
+    border-collapse:collapse;
+    margin:30px;
+    margin:auto;
+    margin-bottom: 50px;
+}
+table tr:nth-child(even){
+    background-color:rgb(160, 96, 96);
+}
+table tr:nth-child(odd){
+    background-color: rgb(20, 121, 104);
+}
+.footer{
+    background-color: rgba(0,0,0,0.8);
+    padding: 10px;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer h3{
+    color:rgb(188, 201, 238);
+}
+.footer p{
+    font-size:1.5vw;
+    color:rgb(184, 164, 164);
+}
+.footer .footcol1 ,.footcol2 , .footcol3 {
+    flex-basis:30%;
+}
+.footer .footcol1 a{
+    font-size:1.5vw;
+    text-decoration: none;
+    color:rgb(184, 164, 164);
+    padding:5px;
+    background:transparent;
+    border:1px solid;
+}
+.footer .footcol2 ul{
+    margin-top:0px;
+    list-style-type:none;
+}
+.footer .footcol2 li{
+    margin-bottom:5px;
+}
+.footer .footcol2{
+    display:flex;
+    flex-flow: column;
+}
+.footer .footcol2 a{
+    font-size:1.5vw;
+    margin-bottom:8px;
+    text-decoration: none;
+    color:rgb(184, 164, 164);
+
+}
+.lastSection{
+    background-color:rgba(0,0,0,0.9);
+    text-align: center;
+    font-size:1.5vw;
+    color:rgb(184, 164, 164);
+    padding:50px;
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+.nav ul{
+    display:block;
+}
+.menu{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgb(255,255,255)), url('newcars/menu2.jpg') no-repeat;
+}
+.nav a{
+    font-size: 2vw;
+
+}
+.header{
+    padding:70px;
+    font-size:4vw; 
+ }
+.menu ul a{
+    font-size:2vw;
+}
+.header2{
+    max-width:600px;
+}
+.header2:before{
+    width:120px;
+}
+.header2:after{
+    width:120px;
+}
+.gallery1{
+    height:3400px;
+}
+.gallery1-inside {
+    margin: 20px auto;
+    width:60%;
+    height:9%;
+}
+.gallery1-inside span{
+    font-size: 2vw;
+}
+.gallery1-inside > p{
+    font-size:2vw;}
+
+.col1 p{
+    line-height:25px;
+    font-size:2vw;
+}
+.col2 img{
+    min-height:150px;
+}
+th{
+    font-size : 2vw;
+}
+td {
+    font-size : 2vw;
+}
+}
+
+
+
+@media screen and (max-width:600px){
+    .nav ul{
+        display:block;
+    }
+    .nav a{
+        font-size: 4vw;
+    }
+    .header{
+        padding:30px;
+        font-size:4vw;   
+     }
+    .menu{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgb(255,255,255)), url('newcars/menu3.jpg') no-repeat;
+    }
+    .menu ul a{
+        font-size:3vw;
+    }
+    h2{
+        font-size:4.2vw;
+    }
+    .header2{
+        max-width:400px;
+        font-size:5vw;
+    }
+    .header2:before{
+        width:80px;
+    }
+    .header2:after{
+        width:80px;
+    }
+    .gallery1{
+        height: 2000px;
+    }
+    .gallery1-inside {
+        margin: 20px auto;
+        width:60%;
+        height:6%;
+    }
+    .gallery1-inside span{
+        font-size: 4vw;
+    }
+    .gallery1-inside > p{
+        font-size: 3.5vw;
+    }
+    .gallery1-inside a{
+        font-size: 4vw;
+    }
+    .col1{
+        height:390px;
+    }
+    ul .btn{
+        width:10px;
+        height:10px;
+        margin-right:10px;
+    }
+    .col1 ul{
+        bottom:0px;
+        left:0px;
+    }
+    .col1 p{
+        line-height:20px;
+        font-size:3vw;
+    }
+    .col2 img{
+        margin-top:30px;
+        min-height:100px;
+    }
+    .section1 p{
+        font-size:3vw;
+    }
+    th{
+        font-size : 3vw;
+    }
+    td{
+        padding:0px;
+        font-size : 3vw;
+    }
+    .footer{
+        flex-flow: column;
+        height:580px;
+    }
+    .footer p{
+        font-size:3vw;
+    }
+    .footer .footcol1 a{
+        font-size:3vw;
+    }
+    
+    .footer .footcol2 a {
+        font-size:3vw;
+    }
+    .lastSection{
+        font-size: 2.5vw;;
+    }
+}

@@ -1,0 +1,183 @@
+
+body{ 
+    margin:0px; 
+    font-family: "Lucida Fax";
+}
+
+.header{
+    background: url('header.jpg') no-repeat ;
+    background-size: cover;
+    padding: 120px;
+    text-align: center;
+    color:rgba(204, 255, 238, 0.6);
+    font-size:3vw;
+}
+
+.nav ul{
+    list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.nav a:hover{
+    background: rgba(17,103,198,1);
+}
+
+ .aboutus{
+    display: flex;
+    flex-flow: row;
+    margin:5% 30px;
+}
+
+ .aboutus img{
+    border-radius: 50%;
+    padding:1px;
+    border:8px solid transparent;
+    background: linear-gradient(60deg,rgb(148, 143, 95)10%,rgb(117, 43, 43)100%)  ;
+    margin:10px;
+}
+ .aboutus .sentenses{
+     line-height: 30px ;
+    font-size:1.3vw;
+}
+
+.footer{
+    background-color: rgba(0,0,0,0.8);
+    padding: 10px;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer h3{
+    color:rgb(188, 201, 238);
+}
+.footer p{
+    font-size:1.5vw;
+    color:rgb(184, 164, 164);
+}
+.footer .footcol1 ,.footcol2 , .footcol3 {
+    flex-basis:30%;
+}
+.footer .footcol1 a{
+    font-size:1.5vw;
+    text-decoration: none;
+    color:rgb(184, 164, 164);
+    padding:5px;
+    background:transparent;
+    border:1px solid;
+}
+.footer .footcol2 ul{
+    margin-top:0px;
+    list-style-type:none;
+}
+.footer .footcol2 li{
+    margin-bottom:5px;
+}
+.footer .footcol2{
+    display:flex;
+    flex-flow: column;
+}
+.footer .footcol2 a{
+    font-size:1.5vw;
+    margin-bottom:8px;
+    text-decoration: none;
+    color:rgb(184, 164, 164);
+
+}
+.lastSection{
+    background-color:rgba(0,0,0,0.9);
+    text-align: center;
+    font-size:1.5vw;
+    color:rgb(184, 164, 164);
+    padding:50px;
+}
+
+
+
+@media screen and (max-width:768px){
+    .nav ul{
+        display:block;
+    }
+    .header{
+        padding: 70px;
+        font-size:4vw;
+    }
+     .aboutus{
+         height:700px;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+    .aboutus img{
+        display: block;
+        width:50%;
+        margin: auto;
+    }
+    .aboutus .sentenses{
+        font-size:2vw;
+    } 
+    .nav a{
+        font-size: 2vw;
+    }
+    }
+    
+    
+    
+    @media screen and (max-width:600px){
+        .nav ul{
+            display:block;
+        }
+        .nav a{
+            font-size: 4vw;
+        }
+        .header{
+            padding:30px;
+            font-size:4vw;
+        }
+        .aboutus{
+            height:1200px;
+           flex-flow: column;
+           justify-content: space-around;
+       }
+       .aboutus img{
+           display: block;
+           width:80%;
+           margin: auto;
+       }
+       .aboutus .sentenses{
+        font-size:4vw;
+    }
+        .footer{
+            padding: 60px;
+            flex-flow: column;
+            height:580px;
+        }
+        .footer p{
+            font-size:3vw;
+        }
+        .footer .footcol1 a{
+            font-size:3vw;
+        }
+        
+        .footer .footcol2 a {
+            font-size:3vw;
+        }
+        .lastSection{
+            font-size: 2.5vw;;
+        }
+    }

@@ -1,0 +1,280 @@
+
+body{ 
+    margin:0px; 
+    font-family: "Lucida Fax";
+}
+.header{
+    background: url('header.jpg') no-repeat ;
+    background-size: cover;
+    padding: 120px;
+    text-align: center;
+    color:rgba(204, 255, 238, 0.6);
+    font-size:3vw;
+}
+
+.nav ul{
+    list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.nav a:hover{
+    background: rgba(17,103,198,1);
+}
+
+
+  
+.login-page{
+	height: 700px;
+	width: 100%;
+	background: url(wallpaper3.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.form-box{
+    width:380px;
+	height:650px;
+	position:relative;
+	margin: auto;
+	background:rgba(0,0,0,0.5);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+    color:white;
+}
+
+#btn{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register a{
+	color:#999;
+}
+.input-group-register p{
+	display: none;
+    font-size: 15px;
+	color:white;
+	border:.3px solid #d8bcf39a;
+}
+.input-group-register label{
+	color:white;
+}
+.input-field{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+    
+}
+::-webkit-input-placeholder{
+    color: rgba(255,255,255,0.8);
+}
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span{
+	color: rgba(255,255,255,0.8);
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login{
+	left:50px;
+}
+#login input{
+	color:white;
+	font-size:15;
+}
+#register{
+	left:450px;
+}
+#register input{
+	color:white;
+	font-size: 15;
+}
+#footer{
+    background-color: rgba(0,0,0,0.8);
+    padding: 10px;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    text-align: center;
+}
+#footer h3{
+    color:rgb(188, 201, 238);
+}
+#footer p{
+    font-size:1.5vw;
+    color:rgb(184, 164, 164);
+}
+#footer .footcol1 ,.footcol2 , .footcol3 {
+    flex-basis:30%;
+}
+#footer .footcol1 a{
+    font-size:1.5vw;
+    text-decoration: none;
+    color:rgb(184, 164, 164);
+    padding:5px;
+    background:transparent;
+    border:1px solid;
+}
+#footer .footcol2 ul{
+    margin-top:0px;
+    list-style-type:none;
+}
+#footer .footcol2 li{
+    margin-bottom:5px;
+}
+#footer .footcol2{
+    display:flex;
+    flex-flow: column;
+}
+#footer .footcol2 a{
+    font-size:1.5vw;
+    margin-bottom:8px;
+    text-decoration: none;
+    color:rgb(184, 164, 164);
+
+}
+.lastSection div{
+    background-color:rgba(0,0,0,0.9);
+    text-align: center;
+    font-size:1.5vw;
+    color:rgb(184, 164, 164);
+    padding:50px;
+}
+
+
+@media screen and (max-width:768px){
+    .nav ul{
+        display:block;
+    }
+    .header{
+        padding: 70px;
+        font-size:4vw;
+    }
+    .menu{
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgb(255,255,255)), url('usedcars/menu2.jpg') no-repeat;
+    }
+    .nav a{
+        font-size: 2vw;
+    }
+    .menu ul a{
+        font-size:2vw;
+    }
+    
+}
+    
+    
+    
+ @media screen and (max-width:600px){
+	.nav ul{
+		display:block;
+	}
+	.nav a{
+		font-size: 4vw;
+	}
+	.menu{
+		background: linear-gradient(rgba(0, 0, 0, 0.5),rgb(255,255,255)), url('usedcars/menu3.jpg') no-repeat;
+	}
+	.header{
+		padding:30px;
+	}
+	.form-box{
+		width:250px;
+	}
+	.input-field{
+	width: 60%;
+	}
+	.submit-btn{
+	width: 60%;
+	padding: 10px 0px;
+	margin: 0px;
+	margin-left:10px;
+}
+.input-group-register p{
+	width:60%;
+}
+	#footer{
+		flex-flow: column;
+		padding: 60px;
+		height:580px;
+	}
+	#footer p{
+		font-size:3vw;
+	}
+	#footer .footcol1 a{
+		font-size:3vw;
+	}
+	#footer .footcol2 a {
+		font-size:3vw;
+	}
+	.lastSection div{
+		font-size: 2.5vw;;
+	}
+}
